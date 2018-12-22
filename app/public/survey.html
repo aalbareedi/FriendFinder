@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form method="POST" action="api/friends">
+        <label for="nameInput">Name</label
+        ><input type="text" name="nameInput" id="nameInput" required /><br />
+        <label for="photoInput">Photo</label
+        ><input type="text" name="photoInput" id="photoInput" required />
+
+        <legend>
+          Please select one of the following (1 = Strongly Disagree | 2 =
+          Disagree | 3 = Neutral | 4 = Agree | 5 = Strongly Agree)
+        </legend>
+        1. Social media plays a major role in today’s society.
+        <input type="radio" name="action1" id="strongDis" value="1" /><label
+          for="strongDis"
+          >1</label
+        >
+        <input type="radio" name="action1" id="disagree" value="2" /><label
+          for="disagree"
+          >2</label
+        >
+        <input type="radio" name="action1" id="neutral" value="3" /><label
+          for="neutral"
+          >3</label
+        >
+        <input type="radio" name="action1" id="agree" value="4" /><label
+          for="agree"
+          >4</label
+        >
+        <input type="radio" name="action1" id="strongAgree" value="5" /><label
+          for="strongAgree"
+          >5</label
+        ><br />
+        2. I use social media to interact, engage, & communicate with people I
+        care about.
+        <input type="radio" name="action2" id="strongDis" value="1" /><label
+          for="strongDis"
+          >1</label
+        >
+        <input type="radio" name="action2" id="disagree" value="2" /><label
+          for="disagree"
+          >2</label
+        >
+        <input type="radio" name="action2" id="neutral" value="3" /><label
+          for="neutral"
+          >3</label
+        >
+        <input type="radio" name="action2" id="agree" value="4" /><label
+          for="agree"
+          >4</label
+        >
+        <input type="radio" name="action2" id="strongAgree" value="5" /><label
+          for="strongAgree"
+          >5</label
+        ><br />
+        3. Social media is my primary source of getting news, entertainment, &
+        other useful content.
+        <input type="radio" name="action3" id="strongDis" value="1" /><label
+          for="strongDis"
+          >1</label
+        >
+        <input type="radio" name="action3" id="disagree" value="2" /><label
+          for="disagree"
+          >2</label
+        >
+        <input type="radio" name="action3" id="neutral" value="3" /><label
+          for="neutral"
+          >3</label
+        >
+        <input type="radio" name="action3" id="agree" value="4" /><label
+          for="agree"
+          >4</label
+        >
+        <input type="radio" name="action3" id="strongAgree" value="5" /><label
+          for="strongAgree"
+          >5</label
+        ><br />
+        4. I check social media consistently throughout my day.
+        <input type="radio" name="action4" id="strongDis" value="1" /><label
+          for="strongDis"
+          >1</label
+        >
+        <input type="radio" name="action4" id="disagree" value="2" /><label
+          for="disagree"
+          >2</label
+        >
+        <input type="radio" name="action4" id="neutral" value="3" /><label
+          for="neutral"
+          >3</label
+        >
+        <input type="radio" name="action4" id="agree" value="4" /><label
+          for="agree"
+          >4</label
+        >
+        <input type="radio" name="action4" id="strongAgree" value="5" /><label
+          for="strongAgree"
+          >5</label
+        ><br />
+        5. Social media is toxic and promotes unhealthy practices.
+        <input type="radio" name="action5" id="strongDis" value="1" /><label
+          for="strongDis"
+          >1</label
+        >
+        <input type="radio" name="action5" id="disagree" value="2" /><label
+          for="disagree"
+          >2</label
+        >
+        <input type="radio" name="action5" id="neutral" value="3" /><label
+          for="neutral"
+          >3</label
+        >
+        <input type="radio" name="action5" id="agree" value="4" /><label
+          for="agree"
+          >4</label
+        >
+        <input type="radio" name="action5" id="strongAgree" value="5" /><label
+          for="strongAgree"
+          >5</label
+        ><br />
+        6. It is difficult to give credibility to someone who doesn’t use social
+        media whatsoever.
+        <input type="radio" name="action6" id="strongDis" value="1" /><label
+          for="strongDis"
+          >1</label
+        >
+        <input type="radio" name="action6" id="disagree" value="2" /><label
+          for="disagree"
+          >2</label
+        >
+        <input type="radio" name="action6" id="neutral" value="3" /><label
+          for="neutral"
+          >3</label
+        >
+        <input type="radio" name="action6" id="agree" value="4" /><label
+          for="agree"
+          >4</label
+        >
+        <input type="radio" name="action6" id="strongAgree" value="5" /><label
+          for="strongAgree"
+          >5</label
+        ><br />
+        7. Overall, social media has done more good than bad for human social
+        interaction.
+        <input type="radio" name="action7" id="strongDis" value="1" /><label
+          for="strongDis"
+          >1</label
+        >
+        <input type="radio" name="action7" id="disagree" value="2" /><label
+          for="disagree"
+          >2</label
+        >
+        <input type="radio" name="action7" id="neutral" value="3" /><label
+          for="neutral"
+          >3</label
+        >
+        <input type="radio" name="action7" id="agree" value="4" /><label
+          for="agree"
+          >4</label
+        >
+        <input type="radio" name="action7" id="strongAgree" value="5" /><label
+          for="strongAgree"
+          >5</label
+        ><br />
+        8. If I do not check social media for a long period of time I start to
+        feel disconnected from the world.
+        <input type="radio" name="action8" id="strongDis" value="1" /><label
+          for="strongDis"
+          >1</label
+        >
+        <input type="radio" name="action8" id="disagree" value="2" /><label
+          for="disagree"
+          >2</label
+        >
+        <input type="radio" name="action8" id="neutral" value="3" /><label
+          for="neutral"
+          >3</label
+        >
+        <input type="radio" name="action8" id="agree" value="4" /><label
+          for="agree"
+          >4</label
+        >
+        <input type="radio" name="action8" id="strongAgree" value="5" /><label
+          for="strongAgree"
+          >5</label
+        ><br />
+        9. The prevalence of social media will grow larger over time.
+        <input type="radio" name="action9" id="strongDis" value="1" /><label
+          for="strongDis"
+          >1</label
+        >
+        <input type="radio" name="action9" id="disagree" value="2" /><label
+          for="disagree"
+          >2</label
+        >
+        <input type="radio" name="action9" id="neutral" value="3" /><label
+          for="neutral"
+          >3</label
+        >
+        <input type="radio" name="action9" id="agree" value="4" /><label
+          for="agree"
+          >4</label
+        >
+        <input type="radio" name="action9" id="strongAgree" value="5" /><label
+          for="strongAgree"
+          >5</label
+        ><br />
+        10. Social media does an accurate job of portraying who someone truly
+        is.
+        <input type="radio" name="action10" id="strongDis" value="1" /><label
+          for="strongDis"
+          >1</label
+        >
+        <input type="radio" name="action10" id="disagree" value="2" /><label
+          for="disagree"
+          >2</label
+        >
+        <input type="radio" name="action10" id="neutral" value="3" /><label
+          for="neutral"
+          >3</label
+        >
+        <input type="radio" name="action10" id="agree" value="4" /><label
+          for="agree"
+          >4</label
+        >
+        <input type="radio" name="action10" id="strongAgree" value="5" /><label
+          for="strongAgree"
+          >5</label
+        ><br />
+        <input type="submit" name="submitBtn" id="submitBtn" value="Submit" />
+      </form>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>You are most compatible with <span id="resultName"></span></p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $.get("api/friends", function(data, status) {
+          // alert("Data: " + JSON.stringify(data) + "\nStatus: " + status);
+          console.log($("#submitBtn").val());
+          $("#resultName").text(data.name);
+          console.log(data.name);
+
+          $("#myModal").modal();
+        });
+      });
+    </script>
+  </body>
+</html>
